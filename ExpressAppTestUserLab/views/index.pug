@@ -1,5 +1,27 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  script(src='/javascripts/PartIIPractice.js')
+  h1= tit
+  p Part II: Practice
+
+  div
+  p DNI
+
+  div
+  input#dni(placeholder='0-99999999')
+  button(onclick='ValorLetraDNI()') Calcular
+  button(onclick='Cancelar()') Cancelar
+
+  div
+  input#dniCalculado
+  input#flgCancelar(type='hidden' value ='true')
+
+  div
+  p Numero Aleatorio
+
+  div
+  input#min(placeholder='Minimo')
+  input#max(placeholder='Maximo')
+
+  button(onclick='Click()') Click
